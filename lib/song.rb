@@ -53,7 +53,7 @@ class Song
     s
   end
   
-  def self.create_from_filename
+  def self.create_from_filename(file_namme)
     array = file_name.chomp(".mp3").split(" - ")
     s = self.new
     s.name = array[1]
